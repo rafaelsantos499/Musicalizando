@@ -10,11 +10,6 @@ html {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
-  display: block;
-}
-
 :root {
   /* FONTS*/
   --font-primary: "Baloo Da 2", serif;
@@ -29,6 +24,11 @@ img {
   --title-color: #4b4b4b;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 /* HEADER */
 
 #header {
@@ -37,6 +37,8 @@ img {
 }
 
 .bg-header img {
+  width: 100%;
+  display: block;
   height: 100vh;
   object-fit: cover;
   opacity: 0.5;
@@ -189,8 +191,6 @@ img {
 }
 
 .description img {
-  width: 200px;
-  height: 200px;
   opacity: 0;
   animation: moveDescription 1s 0.3s forwards;
 }
@@ -302,12 +302,19 @@ section h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
+.click-more {
+  cursor: pointer;
+}
+
 .know-more p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
+  margin-top: -35px;
+
   text-transform: uppercase;
   color: var(--color-primary);
 }
@@ -317,9 +324,30 @@ section h1 {
   cursor: pointer;
   text-shadow: rgb(0, 0, 0, 0.3) 1px 10px 15px;
   color: var(--color-primary);
+  animation: button-know-more 2s infinite alternate;
+
+  display: block;
+}
+
+@keyframes button-know-more {
+  0% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.content-description {
+  /* display: none; */
+}
+
+.content-description img {
+  max-width: 442px;
 }
 
 .list-description {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
