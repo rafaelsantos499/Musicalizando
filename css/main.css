@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -66,14 +69,29 @@ img {
 }
 
 #btn-mobile.active {
-  right: 250px;
+  right: 220px;
   transition-delay: 0.4s;
 }
 
 .hamburger {
   color: #a044ff;
-  border-top: 2px solid;
+  border-top: 3px solid;
   width: 35px;
+  transition: color 2s;
+}
+
+.hamburger.active-color {
+  color: #000;
+  animation: hamburger-color 1s forwards;
+}
+
+@keyframes hamburger-color {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
 }
 
 .hamburger::after,
@@ -82,10 +100,15 @@ img {
   content: "";
   display: block;
   width: 35px;
-  height: 2px;
+  height: 3px;
   margin-top: 5px;
   background: #a044ff;
   transition: 1.5s;
+}
+
+.hamburger.active-color::after,
+.hamburger.active-color::before {
+  background: #000000;
 }
 
 .hamburger.active {
@@ -117,6 +140,7 @@ img {
   align-items: center;
   flex-direction: column;
   transition: all 1s;
+  box-shadow: 5px 5px 15px 0px rgb(44, 44, 44, 0.8);
 }
 
 .sidebar-menu.active {
@@ -260,6 +284,8 @@ section h1 {
 
 .box-class p {
   font-size: 1.5em;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
   color: var(--color-p);
 }
 
@@ -424,6 +450,51 @@ section h1 {
   position: relative !important;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-primary) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary) !important;
+}
+
+/* FOOTER */
+
+#bg-footer {
+  width: 100%;
+  height: 126px;
+  background-color: #000;
+  position: relative;
+}
+
+.img-footer img {
+  width: 100%;
+  height: 126px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.content-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top: 0px;
+  color: #fff;
+  font-family: var(--font-secundary);
+  text-align: center;
+  line-height: 30px;
+}
+
+.credit {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
 @media (max-width: 460px) {
   .contender-description h1 {
     font-size: 3rem;
@@ -435,6 +506,7 @@ section h1 {
 
   .description {
     width: 300px;
+    top: 35%;
     left: 0px;
     text-align: center;
   }
@@ -442,6 +514,16 @@ section h1 {
     margin: 0 auto;
   }
 
+  .sidebar-menu {
+    width: 100%;
+  }
+
+  #btn-mobile.active {
+    right: 280px;
+  }
+}
+
+@media (max-width: 768px) {
   .swiper-button-next {
     display: none !important;
   }
