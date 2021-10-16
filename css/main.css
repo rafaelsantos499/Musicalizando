@@ -253,6 +253,17 @@ img {
 
 /* CLASS */
 
+[data-anime="show-scroll"] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+[data-anime="show-scroll"].active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 .bg-section {
   width: 100%;
   padding: 60px 0px;
@@ -339,7 +350,11 @@ section h1 {
 }
 
 .content-description {
-  /* display: none; */
+  display: none;
+}
+
+.content-description.active {
+  display: block;
 }
 
 .content-description img {
@@ -352,6 +367,10 @@ section h1 {
   justify-content: center;
   flex-wrap: wrap;
   font-size: 1.5rem;
+}
+
+.list-description h2 {
+  color: var(--title-color);
 }
 
 .list-description ul {
