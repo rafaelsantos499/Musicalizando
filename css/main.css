@@ -356,15 +356,19 @@ section h1 {
 }
 
 .content-description.active {
-  max-height: 1000px;
+  max-height: 1100px;
   pointer-events: none;
 }
 
 .content-description img {
+  border-radius: 10px;
+  box-shadow: 3px 3px 9px rgb(0, 0, 0, 0.8);
+  height: 100%;
   max-width: 442px;
 }
 
 .list-description {
+  padding-bottom: 15px;
   margin-top: 50px;
   display: flex;
   justify-content: center;
