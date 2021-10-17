@@ -220,6 +220,23 @@ img {
   opacity: 0;
 }
 
+.contender-description p::after {
+  content: "|";
+  margin-left: 3px;
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 .contender-description p {
   color: #ffffff;
   font-family: "josefin slab";
@@ -246,6 +263,7 @@ img {
   border-radius: 5px;
   cursor: pointer;
   animation: moveDescription 1s 0.9s forwards;
+  animation-delay: 8s;
   opacity: 0;
 }
 
