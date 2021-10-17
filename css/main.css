@@ -164,6 +164,15 @@ img {
   color: #6a3093;
 }
 
+.nav-menu span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1rem;
+  font-family: var(--font-secundary);
+  color: #000;
+  font-weight: 700;
+}
+
 /* SOCIAL MEDIA  */
 
 .social-media {
