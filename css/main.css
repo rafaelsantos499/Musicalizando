@@ -350,11 +350,14 @@ section h1 {
 }
 
 .content-description {
-  display: none;
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 1s ease-in-out;
 }
 
 .content-description.active {
-  display: block;
+  max-height: 1000px;
+  pointer-events: none;
 }
 
 .content-description img {

@@ -3,7 +3,7 @@ export default function initShowScroll() {
 
     function animaScroll() {
 
-        const windowHalf = window.innerHeight * 0.6
+        const windowHalf = window.innerHeight * 0.7
 
         section.forEach((section) => {
 
