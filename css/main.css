@@ -193,6 +193,7 @@ img {
 /* DESCRIPTION */
 
 .description {
+  max-width: 500px;
   position: absolute;
   top: 20%;
   left: 15%;
@@ -586,13 +587,17 @@ section h1 {
   }
 
   .description {
-    width: 300px;
     top: 35%;
     left: 0px;
     text-align: center;
+    padding: 10px;
   }
   .description button {
     margin: 0 auto;
+  }
+
+  .contender-description button {
+    margin-top: 40px;
   }
 
   .sidebar-menu {
