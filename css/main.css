@@ -60,8 +60,8 @@ img {
 #btn-mobile {
   position: fixed;
   display: flex;
-  right: 40px;
-  top: 50px;
+  right: 30px;
+  top: 25px;
   z-index: 200;
   background: none;
   border: none;
@@ -134,7 +134,7 @@ img {
   background-color: #fff;
   width: 300px;
   height: 100vh;
-  right: -400px;
+  right: -550px;
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -250,11 +250,7 @@ img {
 
 .contender-description button {
   display: block;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  font-family: "Mulish";
-  color: #ffffff;
+
   background: #6a3093;
   background: -webkit-linear-gradient(to right, #6a3093, #a044ff);
   background: linear-gradient(to right, #6a3093, #a044ff);
@@ -266,6 +262,14 @@ img {
   animation: moveDescription 1s 0.9s forwards;
   animation-delay: 8s;
   opacity: 0;
+}
+
+.contender-description button a {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-family: "Mulish";
+  color: #ffffff;
 }
 
 @keyframes moveDescription {
