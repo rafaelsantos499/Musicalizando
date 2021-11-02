@@ -119,7 +119,7 @@ img {
   max-width: 1260px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   margin: 40px 0px;
 }
 
