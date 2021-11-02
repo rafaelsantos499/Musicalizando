@@ -1,10 +1,10 @@
 # Projeto Musicalizando - https://rafaelsantos499.github.io/Musicalizando/
 
 <h2>Projeto em Desenvolvimento.</h2>
-
-<P>Aplicando do Projeto os Estudos.</p>
+<P>Projeto com Wireframe.</p>
+<P>Aplicando os Estudos.</p>
 <ul>
-<li>Html Flexbox</li>
+<li>Html Flexbox,Responsivo</li>
 <li>JavaScript</li>
 <li>Swiper API</li>
 <li>Css Grid</li>
