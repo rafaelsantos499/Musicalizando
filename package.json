@@ -1,0 +1,30 @@
+{
+  "name": "musicalizando",
+  "version": "1.0.0",
+  "description": "<h2>Projeto em Desenvolvimento.</h2>\r <P>Projeto com Wireframe.</p>\r <P>Aplicando os Estudos.</p>\r <ul>\r <li>Html Flexbox,Responsivo</li>\r <li>JavaScript</li>\r <li>Swiper API</li>\r <li>Css Grid</li>\r </ul>\r <br>",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production ./js/scripts.js -o main.js",
+    "dev": "webpack --mode development --watch ./js/scripts.js -o main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelsantos499/Musicalizando.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelsantos499/Musicalizando/issues"
+  },
+  "homepage": "https://github.com/rafaelsantos499/Musicalizando#readme",
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+   
+  }
+}
