@@ -127,6 +127,7 @@ export class Slide {
     }
 
     init() {
+        this.onResize()
         this.bindEvents()
         this.transition(true)
         this.addSlideEvent()
