@@ -11,10 +11,11 @@
         "sourceType": "module"
     },
     "rules": {
-        "semi":0,
-        "linebreak-style":0,
+        "linebreak-style": 0,
+        "semi": 0,
         "indent":"off",
-        "import/extensions": 0,
-        "no-var":"off"
+        "no-param-reassign": 0,
+        "import/extensions":0,
+        "max-classes-per-file": ["error", 2]
     }
 }
