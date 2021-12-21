@@ -1,4 +1,4 @@
-import debounce from './debounce'
+import debounce from './debounce.js'
 
 export class Slide {
     constructor(slider, wrapper) {

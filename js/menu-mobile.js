@@ -48,7 +48,7 @@ export default function initMenuMobile() {
 
     const header = document.querySelectorAll('#header')
     function colorBtnMenu() {
-        const windowFinal = window.innerHeight * 0.2
+        const windowFinal = window.innerHeight * 0.0
 
         header.forEach((event) => {
             const headerTop = event.getBoundingClientRect().top - windowFinal
@@ -68,7 +68,7 @@ export default function initMenuMobile() {
 
     // REMOVE ACTIVE AO CLICAR NO LINK
 
-    const navMenuLinks = document.querySelectorAll('[data-Menu="closer-menu"] a[href^="#"]')
+    const navMenuLinks = document.querySelectorAll('[data-Menu="closer-menu"] a[href^="./"]')
     const navMenu = document.querySelector('[data-Menu="closer-menu"]')
 
     function closeMenu() {
