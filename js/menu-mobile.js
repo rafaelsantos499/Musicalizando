@@ -32,9 +32,9 @@ export default function initMenuMobile() {
 
     function menuOpen(event) {
         event.preventDefault()
-        btnMenu.classList.add('active')
-        sidebar.classList.add('active')
-        hamburger.classList.add('active')
+        btnMenu.classList.toggle('active')
+        sidebar.classList.toggle('active')
+        hamburger.classList.toggle('active')
 
         outsideClick(sidebar, events, () => {
             btnMenu.classList.remove('active')
@@ -65,19 +65,4 @@ export default function initMenuMobile() {
     colorBtnMenu()
 
     window.addEventListener('scroll', colorBtnMenu)
-
-    // REMOVE ACTIVE AO CLICAR NO LINK
-
-    const navMenuLinks = document.querySelectorAll('[data-Menu="closer-menu"] a[href^="./"]')
-    const navMenu = document.querySelector('[data-Menu="closer-menu"]')
-
-    function closeMenu() {
-        navMenuLinks.forEach(() => {
-            btnMenu.classList.remove('active')
-            sidebar.classList.remove('active')
-            hamburger.classList.remove('active')
-        })
-    }
-
-    navMenu.addEventListener('click', closeMenu)
 }

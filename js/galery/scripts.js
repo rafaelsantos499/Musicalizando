@@ -10,3 +10,8 @@ setTimeout(() => {
     slide.addArrow('.prev', '.next')
     clearInterval()
 }, 100)
+
+const img = document.querySelectorAll('img')
+img.forEach((iten) => {
+    iten.setAttribute('loading', 'lazy')
+})
