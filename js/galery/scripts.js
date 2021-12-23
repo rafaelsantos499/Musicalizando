@@ -8,6 +8,7 @@ setTimeout(() => {
 
     slide.init()
     slide.addArrow('.prev', '.next')
+    slide.addControl('.custom-control')
     clearInterval()
 }, 100)
 
