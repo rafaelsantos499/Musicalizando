@@ -1,5 +1,6 @@
 .wrapper {
   overflow: hidden;
+  height: 100vh;
 }
 
 .slide {
@@ -12,9 +13,11 @@
 }
 
 .slide li {
+  margin-top: 70px;
   flex-shrink: 0;
-  width: 98vw;
-  max-width: 800px;
+  width: 90vw;
+  height: 80vh;
+  max-width: 500px;
   border-radius: 4px;
   overflow: hidden;
   opacity: 0.8;
@@ -52,26 +55,31 @@
 }
 
 .custom-control {
+  margin-top: -70px;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
   align-items: center;
 }
 
 .custom-control li {
-  opacity: 0.8;
+  opacity: 0.9;
   transform: scale(0.8);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 60px;
+  height: 70px;
   overflow: hidden;
-  margin: 2px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  margin: -15px;
+}
+
+.custom-control li img {
+  width: 60px;
+  height: 70px;
+  object-fit: cover;
 }
 
 .custom-control li.active {
+  position: relative;
+  z-index: 50;
   transition: 0.3s;
   opacity: 1;
   transform: scale(1);
@@ -86,7 +94,7 @@
 
 .arrow-nav {
   position: absolute;
-  top: 20%;
+  top: 40%;
   width: 100%;
 }
 
@@ -113,5 +121,36 @@
 @media (max-width: 768px) {
   .arrow-nav {
     display: none;
+  }
+  .custom-control {
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .slide li {
+    margin-top: 0;
+  }
+
+  .custom-control li {
+    width: 40px;
+    height: 50px;
+  }
+
+  .custom-control li {
+    opacity: 0.9;
+    transform: scale(0.8);
+    width: 40px;
+    height: 50px;
+    overflow: hidden;
+    margin: -15px;
+  }
+
+  .custom-control li img {
+    width: 40px;
+    height: 50px;
+    object-fit: cover;
   }
 }
