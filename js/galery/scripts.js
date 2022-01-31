@@ -1,5 +1,8 @@
 import initMenuMobile from '../menu-mobile.js'
 import SlideNav from '../slide.js'
+import fetchDados from './fetch.js'
+
+fetchDados()
 
 initMenuMobile()
 
@@ -10,7 +13,7 @@ setTimeout(() => {
     slide.addArrow('.prev', '.next')
     slide.addControl('.custom-control')
     clearInterval()
-}, 100)
+}, 1000)
 
 const img = document.querySelectorAll('img')
 img.forEach((iten) => {
