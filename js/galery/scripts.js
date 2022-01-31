@@ -13,7 +13,7 @@ setTimeout(() => {
     slide.addArrow('.prev', '.next')
     slide.addControl('.custom-control')
     clearInterval()
-}, 1000)
+}, 2000)
 
 const img = document.querySelectorAll('img')
 img.forEach((iten) => {
