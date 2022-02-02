@@ -6,7 +6,7 @@ Projeto feito com a finalidade de divulgar aulas de musicas.
 
 ## 📦 Desenvolvimento
 
-Feito totalmente do zero,  do layout e codigo.
+Feito totalmente do zero,  do layout ao codigo.
 
 ## 🛠️ Construído com
 
